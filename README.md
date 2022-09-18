@@ -11,12 +11,14 @@ And as part of the data analysis and processing, I implemented data augmentation
 
 
 # model:
-From a general look at the data it was evident that there is no need to implement a model capable of detecting small details in the image since it can be seen that the main part of the image is the sign of movement and already in the first convolution layers it was possible to achieve a relatively clear clarification of the model therefore I chose to use the resnet18 architecture as well as one of the main considerations What I was considering was whether to perform pri-trining for the model or not when in the end I chose that the model must be pri-trined (in the trining phase I will expand on the process)
+From a general look at the data it was evident that there is no need to implement a model capable of detecting small details in the image since it can be seen that the main part of the image is the sign of movement and already in the first convolution layers it was possible to achieve a relatively clear clarification of the model therefore I chose to use the ResNet18 architecture as well as one of the main considerations What I was considering was whether to perform pri-trining for the model or not when in the end I chose that the model must be pri-trined (in the trining phase I will expand on the process)
 
 The loss function, learning rate, and optimizer were the same for all models:
 - loss function: CrossEntropyLoss
 - optimizer: Adam
 -lr: 0.0001
+
+![Original-ResNet-18-Architecture](https://user-images.githubusercontent.com/96596252/190928402-dc64770d-6cd2-447a-9e3a-2d90519fd84e.png)
 
 # Training:
 First I trained the model without pre-training, although I assumed that there was an overlap between the domains, it would be useful to use the prior knowledge of the network for learning, but it was important to test the effect without pre-training first
