@@ -22,15 +22,14 @@ The loss function, learning rate, and optimizer were the same for all models:
 First I trained the model without pre-training, although I assumed that there was an overlap between the domains, it would be useful to use the prior knowledge of the network for learning, but it was important to test the effect without pre-training first
 I examined the result for 25 epoch and got the following results:
 
-<img width="759" alt="צילום מסך 2022-09-19 ב-0 20 39" src="https://user-images.githubusercontent.com/96596252/190928585-cd25a21d-8858-44a3-825e-a4d008db5cb9.png">
-
+ <img width="750" alt="צילום מסך 2022-09-19 ב-0 20 22" src="https://user-images.githubusercontent.com/96596252/190928588-a7855ef8-9078-40fe-b150-b77e78247616.png">
  
 As you can see it is clear that the pre-training contributes but as you could see the accuracy levels fluctuated in the 65 percent area as a limiter to the fact that the loss value had difficulty falling below the value of 1 and fluctuated around it
 
 The optimizer I started with was adam
 I decided to try SGD with a batch size of 32 and LR=0.001 when I made a gradual lowering of it starting from the 7th iteration and the results I got:
 
-<img width="750" alt="צילום מסך 2022-09-19 ב-0 20 22" src="https://user-images.githubusercontent.com/96596252/190928588-a7855ef8-9078-40fe-b150-b77e78247616.png">
+<img width="759" alt="צילום מסך 2022-09-19 ב-0 20 39" src="https://user-images.githubusercontent.com/96596252/190928585-cd25a21d-8858-44a3-825e-a4d008db5cb9.png">
  
 Results on the face of it were almost the same and with an easy win for Adam I decided to stay with him
 It was also possible to notice that the loss problem I mentioned above still exists
