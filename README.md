@@ -24,7 +24,8 @@ The loss function, learning rate, and optimizer were the same for all models:
 First I trained the model without pre-training, although I assumed that there was an overlap between the domains, it would be useful to use the prior knowledge of the network for learning, but it was important to test the effect without pre-training first
 I examined the result for 25 epoch and got the following results:
 
-<img width="1163" alt="צילום מסך 2022-09-18 ב-21 00 25" src="https://user-images.githubusercontent.com/96596252/190928321-23dc8501-fcc2-4202-9fa6-51452cff4f7a.png">
+<img width="1154" alt="צילום מסך 2022-09-19 ב-0 13 02" src="https://user-images.githubusercontent.com/96596252/190928472-609f872a-31a5-40a1-926d-7120068f3e43.png">
+
  
 As you can see it is clear that the pre-training contributes but as you could see the accuracy levels fluctuated in the 65 percent area as a limiter to the fact that the loss value had difficulty falling below the value of 1 and fluctuated around it
 
