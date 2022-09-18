@@ -18,13 +18,11 @@ The loss function, learning rate, and optimizer were the same for all models:
 - optimizer: Adam
 -lr: 0.0001
 
-![Original-ResNet-18-Architecture](https://user-images.githubusercontent.com/96596252/190928402-dc64770d-6cd2-447a-9e3a-2d90519fd84e.png)
-
 # Training:
 First I trained the model without pre-training, although I assumed that there was an overlap between the domains, it would be useful to use the prior knowledge of the network for learning, but it was important to test the effect without pre-training first
 I examined the result for 25 epoch and got the following results:
 
-<img width="1154" alt="צילום מסך 2022-09-19 ב-0 13 02" src="https://user-images.githubusercontent.com/96596252/190928472-609f872a-31a5-40a1-926d-7120068f3e43.png">
+<img width="1163" alt="צילום מסך 2022-09-18 ב-21 00 25" src="https://user-images.githubusercontent.com/96596252/190928488-d063a25a-9749-44a3-bbed-4509569a20ee.png">
 
  
 As you can see it is clear that the pre-training contributes but as you could see the accuracy levels fluctuated in the 65 percent area as a limiter to the fact that the loss value had difficulty falling below the value of 1 and fluctuated around it
@@ -32,7 +30,7 @@ As you can see it is clear that the pre-training contributes but as you could se
 The optimizer I started with was adam
 I decided to try SGD with a batch size of 32 and LR=0.001 when I made a gradual lowering of it starting from the 7th iteration and the results I got:
 
-<img width="1163" alt="צילום מסך 2022-09-18 ב-21 00 25" src="https://user-images.githubusercontent.com/96596252/190928335-0d8f3bb5-b091-4bcf-be31-86a86ab49a65.png">
+<img width="1154" alt="צילום מסך 2022-09-19 ב-0 13 02" src="https://user-images.githubusercontent.com/96596252/190928482-fb6877d0-3a03-4d18-95fa-24fa1aa136a2.png">
  
 Results on the face of it were almost the same and with an easy win for Adam I decided to stay with him
 It was also possible to notice that the loss problem I mentioned above still exists
