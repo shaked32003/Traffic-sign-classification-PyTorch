@@ -34,5 +34,15 @@ I decided to try SGD with a batch size of 32 and LR=0.001 when I made a gradual 
 Results on the face of it were almost the same and with an easy win for Adam I decided to stay with him
 It was also possible to notice that the loss problem I mentioned above still exists
 
-After trying to administer different regularization methods on the optimizer, I assumed that there might be a need for regularization methods in the network itself, such as dropuot
-I decided to make another change to the last FC layer of the network beyond its initial adaptation to my classification problem, it is worth improving the loss value and the accuracy which can be seen in the code notebook
+After trying different regularization methods in the optimizer, I assumed that there might be a need for regularization methods in the network itself, such as dropuot
+By using the feature extraction technique, I made another change in the last FC layer of the network beyond its initial adaptation to my classification problem, it is worth improving the loss value and the accuracy (you can see the changes I made in the code notebook)
+
+The result was a decrease in the value of the loss, which did reach the 0.523 area, but the accuracy percentage remained the same around 67%
+
+Now I assumed that a fine tuning technique should be performed on some of the last layers of the convolution. after examining the amount of layers on which the fine tuning technique should be performed
+As a limiter for lowering the value of lr = 0.0001 in order to get small fluctuations in the weights, I got excellent results for fine tuning for the last 2 convolution layers
+with an accuracy percentage of 94.21% and a zero loss value
+
+----------
+
+# evaluation
