@@ -41,7 +41,7 @@ The result was a decrease in the value of the loss, which did reach the 0.523 ar
 
 Now I assumed that a fine tuning technique should be performed on some of the last layers of the convolution. after examining the amount of layers on which the fine tuning technique should be performed
 As a limiter for lowering the value of lr = 0.0001 in order to get small fluctuations in the weights, I got excellent results for fine tuning for the last 2 convolution layers
-with an accuracy percentage of 94.21% and a zero loss value
+with an train accuracy percentage of 94.21%,test accuracy of 90.43 and a zero loss value
 
 <img width="706" alt="צילום מסך 2022-09-25 ב-1 04 18" src="https://user-images.githubusercontent.com/96596252/192120243-4a9ed827-9679-4306-bb04-e591a3ad2628.png">
 
