@@ -16,7 +16,7 @@ From a general look at the data it was evident that there is no need to implemen
 The loss function, learning rate, and optimizer were the same for all models:
 - loss function: CrossEntropyLoss
 - optimizer: Adam
--lr: 0.0001
+- lr: 0.0001
 
 # Training
 First I trained the model without pre-training, although I assumed that there was an overlap between the domains, it would be useful to use the prior knowledge of the network for learning, but it was important to test the effect without pre-training first
