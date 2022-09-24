@@ -7,7 +7,8 @@ Here I present a quick overview of the project. For a complete walkthrough, incl
 The data included 43 different classes where each class represents a different road sign
 and taken from the Kaggle site (https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign?datasetId=82373&searchQuery=PyTorch)
 The size of the data was about 40k images from the various departments
-And as part of the data analysis and processing, I implemented data augmentation techniques, cataloged, normalized and created a convenient dataframe for the test phase
+And as part of the data analysis and processing it was possible to see that the same images appear a large number of times in all the different departments
+Therefore I decided to implemented data augmentation techniques for the sake of expanding the variety and additional regulation techniques in the network that will be presented later. all this in addition to cataloged, normalized and created a convenient dataframe for the test phase
 
 
 # model
