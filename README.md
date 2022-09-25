@@ -46,4 +46,20 @@ with an train accuracy percentage of 94.21%,test accuracy of 90.43 and a zero lo
 
 <img width="706" alt="צילום מסך 2022-09-25 ב-1 04 18" src="https://user-images.githubusercontent.com/96596252/192120243-4a9ed827-9679-4306-bb04-e591a3ad2628.png">
 
-It can be seen that regularization techniques helped the model not to enter into a large overfitting and in the area of epoch number 21 a cautious decline begins
+# evaluation
+Following the last graph presented
+Although the model did not go into overfit, but
+I saw that the model had difficulty rising from the 94% area in the training phase, and likewise in direct relation it stopped in the 90% area in the test phase
+
+My goal at the moment was to check whether it is possible to improve the model's performance without entering a state of overfit:
+For this purpose, I decided to download a certain augmentation method, but from the considerations mentioned in the dataset part, it was important not to download all of them, so I left transforms.RandomHorizontalFlip()
+
+After that, I ran the model for additional training with a larger amount of epoch (35) in order to check if there is a breaking point where the model will go into overfit
+
+The results were impressive with 99.87% accuracy in the training phase and 94.25% accuracy in the test phase
+
+<img width="711" alt="צילום מסך 2022-09-25 ב-12 05 53" src="https://user-images.githubusercontent.com/96596252/192136589-eb9650d6-7eb3-4a7c-b9cd-92cfd1e36b1f.png">
+
+# conclusions
+In general, it can be concluded that the pre-training technique along with the various transfer-learning methods mentioned helped to save valuable training time along with good performance
+Along with the regularization methods and relatively large data that allowed the model not to reach overfitting for the training data
