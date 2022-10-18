@@ -54,7 +54,7 @@ Although the model did not go into overfit, but
 I saw that the model had difficulty rising from the 94% area in the training phase, and likewise in direct relation it stopped in the 90% area in the test phase
 
 My goal at the moment was to check whether it is possible to improve the model's performance without entering a state of overfit:
-For this purpose, I decided to download a certain augmentation method, but from the considerations mentioned in the dataset part, it was important not to download all of them, so I left transforms.RandomHorizontalFlip()
+For this purpose, I decided to download a certain augmentation method, but from the considerations mentioned in the dataset part, it was important not to download all of them, so I left `transforms.RandomHorizontalFlip()`
 
 After that, I ran the model for additional training with a larger amount of epoch (35) in order to check if there is a breaking point where the model will go into overfit
 
