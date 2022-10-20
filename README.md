@@ -1,6 +1,6 @@
 # Traffic-sign-classification-with-Pytorch
-
-A self-study project that is not related to academic studies in which I performed a classification for different traffic signs using the pytorch library
+# introduction
+An independent project that is not related to academic studies in which I performed a classification for different traffic signs using the pytorch library
 Here I present a quick overview of the project.
 
 ![D9456E33-A739-42A4-AE25-761EAF5E5BA7_4_5005_c](https://user-images.githubusercontent.com/96596252/193057664-1bd70f31-2f14-48dc-a8d3-8990ab539d7c.jpeg)
