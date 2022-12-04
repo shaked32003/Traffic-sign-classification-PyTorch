@@ -1,6 +1,6 @@
 # Traffic-sign-classification-with-Pytorch
 # introduction
-An independent project that is not related to academic studies in which I performed a classification for different traffic signs using the pytorch library and gat 94.87% accuracy in test
+An independent project that is not related to academic studies in which I performed a classification for different traffic signs using the pytorch library and **gat 99.87% accuracy in the training phase and 94.25% accuracy in the test phase**
 Here I present a quick overview of the project.
 
 ![D9456E33-A739-42A4-AE25-761EAF5E5BA7_4_5005_c](https://user-images.githubusercontent.com/96596252/193057664-1bd70f31-2f14-48dc-a8d3-8990ab539d7c.jpeg)
